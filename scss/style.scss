@@ -14,8 +14,7 @@
 
 /* Основні стилі */
 body {
-	// background-color: var(--bg-color);
-	color: #000;
+	background-color: var(--bg-color);
 	line-height: 1.5;
 	font-size: toRem(14);
 
@@ -25,20 +24,19 @@ body {
 	@media (min-width: toEm(1630)) {
 		font-size: toRem(18);
 	}
-	font-family: "Manrope", sans-serif;
-	// color: var(--main-color);
+	font-family: "Plus Jakarta Sans", sans-serif;
 
-	// opacity: 0;
-	// transition: opacity 1.5s;
+	opacity: 0;
+	transition: opacity 1.5s;
 
-	// .lock & {
-	// 	overflow: hidden;
-	// 	touch-action: none;
-	// 	overscroll-behavior: none;
-	// }
-	// .loaded & {
-	// 	opacity: 1;
-	// }
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+	.loaded & {
+		opacity: 1;
+	}
 }
 .wrapper {
 	min-height: 100%;
@@ -49,13 +47,13 @@ body {
 }
 .wrapper > main {
 	flex-grow: 1;
-	padding-block-end: toRem(80);
-	@media (min-width: toEm(768)) and (max-width: toEm(1629.98)) {
-		padding-block-end: toRem(120);
-	}
-	@media (min-width: toEm(1630)) {
-		padding-block-end: toRem(150);
-	}
+	// padding-block-end: toRem(80);
+	// @media (min-width: toEm(768)) and (max-width: toEm(1629.98)) {
+	// 	padding-block-end: toRem(100);
+	// }
+	// @media (min-width: toEm(1630)) {
+	// 	padding-block-end: toRem(120);
+	// }
 }
 
 // Компоненти
@@ -69,14 +67,15 @@ body {
 /* --------------------- */
 [class*="__container"] {
 	padding-inline: toRem(15);
-	@media (min-width: toEm(992.98)) {
-		margin: 0 auto;
-		padding-inline: toRem(40);
-		max-width: toRem(1360);
-	}
+	margin: 0 auto;
+	// @media (min-width: toEm(992.98)) {
+	// 	margin: 0 auto;
+	// 	padding-inline: toRem(40);
+	// 	max-width: toRem(1360);
+	// }
 	@media (min-width: toEm(1440.98)) {
-		padding-inline: toRem(80);
-		max-width: toRem(1760);
+		// padding-inline: toRem(80);
+		max-width: toRem(1782);
 	}
 }
 /* --------------------- */
