@@ -316,6 +316,7 @@ body {
 }
 
 .request-help {
+  margin-bottom: 6.25rem;
   background-color: var(--dark-color-01);
 }
 .request-help__container {
