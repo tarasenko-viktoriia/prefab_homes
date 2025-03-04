@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:regular&display=swap">
 		<link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:regular,500,600,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<title>HomePage</title>
 	</head>
@@ -36,7 +37,63 @@
 				</div>
 			</header>
 			<main class="home-page">
-				
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur enim incidunt ipsam sunt nesciunt quam eum minus provident nam ad, quisquam, commodi quia asperiores repellendus minima nobis ratione dolores suscipit odit voluptates a! Eaque veritatis aperiam reprehenderit, sint optio accusantium delectus natus nulla ducimus corrupti incidunt repellat quos exercitationem saepe odio sequi recusandae ipsam debitis omnis mollitia. Voluptatem esse, expedita corrupti provident odio autem voluptates mollitia ipsum, commodi voluptatibus, incidunt quam eum inventore! Dolores possimus rem voluptatem. Voluptate a recusandae aliquid ut nisi quas. Id dicta soluta tenetur ad ab perspiciatis dolore, repellat in fuga, quia cupiditate nobis quae quasi.
+				<section class="request-help">
+					<div class="request-help__container">
+						<div class="request-help__body"> 
+							<div class="request-help__title">
+								<h2>Request help</h2>
+							</div>
+							<form class="request-help__form form">
+								<div class="form__block">
+									<div class="form__item">
+										<lable>First name *</lable>
+										<input type="text" name="first name" placeholder="Your first name">
+									</div>
+									<div class="form__item">
+										<lable>Last name *</lable>
+										<input type="text" name="last name" placeholder="Your last name">
+									</div>
+									<div class="form__item">
+										<lable>Phone</lable>
+										<input id="phone" type="tel">
+									</div>
+									<div class="form__item">
+										<lable>Email *</lable>
+										<input type="text" name="last name" placeholder="email@example.com">
+									</div>
+									<div class="form__item">
+										<lable>City *</lable>
+										<input type="text" name="last name" placeholder="Your city">
+									</div>
+									<div class="form__item">
+										<lable>Message  *</lable>
+										<textarea></textarea>
+									</div>
+									<div class="form__item">
+										<lable for="states">State *</lable>
+										<select id="states" name="states">
+											<option value="">Select a State</option>
+											<option value="state1">Опція 1</option>
+											<option value="state2">Опція 2</option>
+											<option value="state3">Опція 3</option>
+										</select>
+									</div>
+									<div class="form__item">
+										<lable for="locations">Location *</lable>
+										<select id="locations" name="locations">
+											<option value="">Select a Location</option>
+											<option value="location1">Опція 1</option>
+											<option value="location2">Опція 2</option>
+											<option value="location3">Опція 3</option>
+										</select>
+									</div>
+								</div>
+								<button class="form__button" type="submit">Help me now</button>
+							</form>
+						</div>
+					</div>
+				</section>
 			</main>
 			<footer class="footer">
 				<div class="footer__container">
@@ -85,6 +142,7 @@
 		</div>
 		<!-- Swiper -->
 		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 		<!-- Підключення JS-файлу з кодом -->
 		<script src="js/script.js"></script>
 	</body>

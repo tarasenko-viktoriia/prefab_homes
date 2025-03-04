@@ -168,3 +168,12 @@ function documentActions(e) {
 // 		observer.observe(animElement)
 // 	})
 // }
+document.addEventListener("DOMContentLoaded", function() {
+	const input = document.querySelector("#phone");
+	const iti = intlTelInput(input, {
+		initialCountry: "us", // Країна за замовчуванням
+		preferredCountries: ["us", "gb", "ua"], // Пріоритетні країни
+		utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Для форматування номерів
+		separateDialCode: true,
+	});
+});

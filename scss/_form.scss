@@ -1,0 +1,102 @@
+.request-help {
+    background-color: var(--dark-color-01);
+    &__container {
+        padding-block: toRem(80);
+    }
+    &__body {
+        max-width: toRem(1192);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: toRem(40);
+    }
+    &__title {
+        color: var(--bg-color);
+        text-align: center;
+        font-size: toRem(38);
+        font-weight: 700;
+    }
+    &__form {
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(32);
+    justify-content: center;
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap:  toRem(20);
+        column-gap: toRem(16);
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border-bottom: toRem(1) solid var(--grey-color-01);
+        
+        
+
+        lable {
+            color: var(--green-color);
+            font-size: toRem(14);
+            font-weight: 600;
+            padding-inline: toRem(24);
+        }
+        input {
+            color: var(--bg-color);
+            padding-inline: toRem(24);
+            padding-block-end: toRem(10);
+
+            &:placeholder {
+                color: var(--grey-color-02);
+                font-size: toRem(14);
+            }
+        }
+        select {
+            color: var(--bg-color);
+            background-color: transparent;
+            font-weight: 400;
+            padding-inline: toRem(24);
+            padding-block-end: toRem(10);
+            font-size: toRem(14);
+            position: relative;
+
+            option {
+                position: absolute;
+                background-color: var(--dark-color-01);
+                width: 80%;
+            }
+        }
+        textarea {
+            resize: none;
+        }
+    }
+    &__button {
+        border-radius: toRem(6);
+        background: var(--green-color);
+        padding: toRem(12) toRem(24);
+
+        color: var(--bg-color);
+        font-size: toRem(15);
+        font-weight: 500;
+        align-self: center;
+    }
+}
+.iti {
+    display: flex;
+    align-items: center;
+    gap: toRem(8);
+    margin-inline-start: toRem(24);
+    &__selected-flag {
+        padding: 0;
+    }
+    &__selected-dial-code {
+        color: var(--bg-color);
+        font-size: toRem(14);
+    }
+    &__flag-container {
+        padding-block-end: toRem(10);
+    }
+}
