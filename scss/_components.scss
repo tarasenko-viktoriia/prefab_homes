@@ -74,3 +74,102 @@
 		}
 	}
 }
+
+.homes-cards {
+	
+
+	// .homes-cards__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: toRem(8);
+	}
+
+	// .homes-cards__item
+
+	&__item {
+		border: toRem(1) solid var(--light-color-02);
+		max-width: toRem(432);
+		padding-bottom: toRem(24);
+	}
+
+	// .homes-cards__link
+
+	&__link {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(24);
+	}
+
+	// .homes-cards__img
+
+	&__img {
+		aspect-ratio: 432 / 237;
+		img {
+			width: 100%;
+		}
+	}
+
+	// .homes-cards__text
+
+	&__text {
+		padding-inline: toRem(12);
+		display: flex;
+		flex-direction: column;
+		gap: toRem(12);
+		h5 {
+			color: var(--green-color);
+			font-size: toRem(16);
+			font-weight: 700;
+		}
+	}
+
+	// .homes-cards__description
+
+	&__description {
+	}
+}
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: toEm(48);
+    row-gap: 0.1875rem;
+
+	// .description__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(8);
+		text-align: center;
+		font-size: toRem(14);
+		position: relative;
+		&:not(:last-child)::after {
+			content: "";
+			block-size: 100%;
+			inline-size: toRem(1);
+			background-color: var(--grey-color-03);
+			position: absolute;
+			inset-block-start: 0;
+			inset-inline-end: toEm(-48);
+		}
+
+		span {
+			color: var(--text-color-01);
+			font-weight: 500;
+		}
+
+		p {
+			color: var(--grey-color-04);
+		}
+	}
+}
+
+.title-block {
+	color: var(--dark-color-04);
+    font-size: toRem(32);
+    font-weight: 700;
+}

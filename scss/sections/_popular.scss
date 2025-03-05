@@ -1,0 +1,25 @@
+.popular {
+
+    // .popular__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: toRem(32);
+    }
+
+    // .popular__header
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: toRem(15);
+    }
+
+    &__button {
+        color: var(--green-color);
+        font-size: toRem(15);
+        font-weight: 500;
+    }
+}

@@ -2,10 +2,15 @@
   --dark-color-01: #131313;
   --dark-color-02: #070707;
   --dark-color-03: #272727;
+  --dark-color-04: #19231B;
   --bg-color: #fff;
   --light-color-01: #F2F2F2;
+  --light-color-02: #F5F5F5;
   --header-bg-color: rgba(243, 243, 243, 0.05);
   --green-color: #015E38;
   --grey-color-01: #B1B1B1;
   --grey-color-02: #616161;
+  --grey-color-03: #D9D9D9;
+  --grey-color-04: #A7A7A7;
+  --text-color-01: #505050;
 }
