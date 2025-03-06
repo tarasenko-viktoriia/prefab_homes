@@ -21,5 +21,16 @@
         color: var(--green-color);
         font-size: toRem(15);
         font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: toRem(10);
+
+        &::after {
+            content: "";
+            inline-size: toRem(18);
+            block-size: toRem(18);
+            flex-shrink: 0;
+            background: url("../../img/icons/arrow-green.svg") 0 0 / 100% no-repeat;
+        }
     }
 }

@@ -188,8 +188,8 @@
 	align-items: center;
 	gap: toRem(24);
 // 	// .actions-header__item
-	// &__item {
-	// 	transition: color 0.3s;
+	&__item {
+		transition: color 0.3s;
 
 	// 	@media (min-width: toEm(1630)) {
 	// 		// font-size: toRem(27);
@@ -199,8 +199,17 @@
 				color: var(--green-color);
 			}
 		}
+		&--color {
+			transition: all 0.3s;
+			@media (any-hover: hover) {
+				&:hover {
+					background-color: var(--green-color);
+					color: var(--bg-color);
+				}
+			}
+		}
 	// }
 	// @media (min-width: toEm(1630)) {
 	// 	gap: toRem(37);
-	// }
+	}
 }

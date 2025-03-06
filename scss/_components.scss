@@ -67,12 +67,12 @@
 	// 	border-radius: toRem(8);
 	// 	font-size: toRem(18);
 	// }
-	@media (any-hover: hover) {
-		&:hover {
-			color: var(--bg-color);
-			background-color: var(--green-color);
-		}
-	}
+	// @media (any-hover: hover) {
+	// 	&:hover {
+	// 		color: var(--bg-color);
+	// 		background-color: var(--green-color);
+	// 	}
+	// }
 }
 
 .homes-cards {
