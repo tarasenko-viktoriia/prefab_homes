@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:regular&display=swap">
 		<link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:regular,500,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+		<link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
 		<link rel="stylesheet" href="css/style.css">
 		<title>HomePage</title>
 	</head>
@@ -20,8 +21,7 @@
 							<ul class="menu__list">
 								<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Adu</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Gallery</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Process</a></li>
+								<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Process</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">About</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
@@ -37,6 +37,35 @@
 				</div>
 			</header>
 			<main class="home-page">
+				<section class="hero">
+					<div class="slider-container">
+						<div class="swiper main-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 1"></div>
+								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 2"></div>
+								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 3"></div>
+								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 4"></div>
+							</div>
+						</div>
+						<div class="thumbnail-container">
+							<div class="swiper-pagination"></div>
+				
+							<div class="swiper thumbnail-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide" onclick="window.location.href='page1.html'"><img src="img/home-section/image-4.png" alt="Thumb 1"></div>
+									<div class="swiper-slide" onclick="window.location.href='page2.html'"><img src="img/home-section/image-4.png" alt="Thumb 2"></div>
+									<div class="swiper-slide" onclick="window.location.href='page3.html'"><img src="img/home-section/image-4.png" alt="Thumb 3"></div>
+									<div class="swiper-slide" onclick="window.location.href='page4.html'"><img src="img/home-section/image-4.png" alt="Thumb 4"></div>
+								</div>
+							</div>
+						</div>
+						<div class="nav-buttons">
+							<div class="button-prev">&#8593;</div>
+							<div class="button-next">&#8595;</div>
+						</div>
+						
+					</div>
+				</section>
 				<section class="category">
 					<div class="category__container">
 						<div class="title-block">
@@ -84,7 +113,7 @@
 							<div class="title-block">
 								<h3>Most popular homes</h3>
 							</div>
-							<a class="popular__button" href="#">View more <span></span></a>
+							<a class="popular__button" href="#">View more</a>
 						</div>
 						<div class="popular__cards homes-cards">
 							<ul class="homes-cards__list">
@@ -346,8 +375,9 @@
 					<div class="footer__block">
 						<div class="logo logo--footer">
 							<a  class="logo" href="#">
-								<img class="logo-img" src="img/icons/logo.svg" alt="logo Fernir">
+								<img class="logo-img" src="img/logo-white.svg" alt="logo Fernir">
 							</a>
+							<a class="footer__btn" href="#">View homes</a>
 						</div>
 						<div class="footer__item">
 							<h4>Homes</h4>
@@ -387,7 +417,7 @@
 			</footer>
 		</div>
 		<!-- Swiper -->
-		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 		<!-- Підключення JS-файлу з кодом -->
 		<script src="js/script.js"></script>

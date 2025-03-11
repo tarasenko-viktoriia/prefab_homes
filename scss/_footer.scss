@@ -94,10 +94,49 @@
 		font-size: toRem(13);
 		letter-spacing: toRem(-0.26);
 	}
+
+    &__btn {
+        display: inline-flex;
+        align-items: center;
+        gap: toRem(10);
+        padding: toRem(12) toRem(24);
+
+        border-radius: toRem(6);
+        background-color: var(--green-color);
+        border: toRem(1) solid transparent;
+        
+        font-size: toRem(15);
+        font-weight: 500;
+        transition: all 0.3s;
+        &::after {
+            content: "";
+            inline-size: toRem(18);
+            block-size: toRem(18);
+            flex-shrink: 0;
+            background: url("../img/icons/arrow.svg") 0 0 / 100% no-repeat;
+            transition: background 0.3s;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                border: toRem(1) solid var(--green-color);
+                background-color: transparent;
+                color: var(--green-color);
+
+                &::after {
+                    background: url("../img/icons/arrow-green.svg") 0 0 / 100% no-repeat;
+                }
+            }
+        }
+    }
 }
 
 .logo--footer {
     flex-basis: 17.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: toRem(44);
 
     @media (max-width: 800px) {
         flex-basis: 20px;
