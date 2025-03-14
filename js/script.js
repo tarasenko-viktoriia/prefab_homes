@@ -53,25 +53,30 @@ document.addEventListener("DOMContentLoaded", function() {
 // });
 
 const images = [
-	"./img/home-section/image-4.png",
-	"./img/banner.jpg",
-	"./img/home-section/image-4.png",
-	"./img/home-section/image-4.png"
+    "./img/home-section/image-4.png",
+    "./img/banner.jpg",
 ];
 
 let currentIndex = 0;
+let isFirstImageActive = true;
 
 function changeImage() {
-	const heroImage = document.getElementById("heroImage");
+    const img1 = document.getElementById("heroImage1");
+    const img2 = document.getElementById("heroImage2");
 
-	// heroImage.classList.add('fade-out');
+    const nextIndex = (currentIndex + 1) % images.length;
+    const activeImage = isFirstImageActive ? img1 : img2;
+    const inactiveImage = isFirstImageActive ? img2 : img1;
 
-	// setTimeout(() => {
-		currentIndex = (currentIndex + 1) % images.length;
-		heroImage.src = images[currentIndex];
+    inactiveImage.src = images[nextIndex];
+    inactiveImage.style.opacity = 1; 
 
-	// 	heroImage.classList.remove('fade-out');
-	// }, 500); 
+    setTimeout(() => {
+        activeImage.style.opacity = 0;
+    }, 100);
+
+    currentIndex = nextIndex;
+    isFirstImageActive = !isFirstImageActive;
 }
 
 setInterval(changeImage, 10000);

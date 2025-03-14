@@ -996,6 +996,12 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+.hero__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .hero__img img {
   position: absolute;
   top: 0;
@@ -1004,6 +1010,95 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#heroImage1 {
+  opacity: 1;
+  z-index: 2;
+}
+
+#heroImage2 {
+  opacity: 0;
+  z-index: 1;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-padding-after: 7.1875rem;
+          padding-block-end: 7.1875rem;
+}
+.hero__title {
+  color: var(--bg-color);
+  font-size: 4.5rem;
+  font-weight: 700;
+  -webkit-margin-after: 2.5rem;
+          margin-block-end: 2.5rem;
+}
+.hero__selects {
+  padding: 0.625rem;
+  max-width: 57rem;
+}
+
+.selects-hero {
+  border-radius: 0.375rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.selects-hero__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.375rem;
+  background-color: var(--bg-color);
+  padding: 1rem 0.75rem;
+}
+.selects-hero__form button {
+  border-radius: 0.375rem;
+  background: var(--green-color);
+  padding: 0.75rem 1.5rem;
+  color: var(--bg-color);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.selects-hero__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.25rem;
+}
+.selects-hero__item label {
+  color: var(--green-color);
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .gallery {
