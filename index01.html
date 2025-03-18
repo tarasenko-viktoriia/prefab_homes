@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна картка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .card {
+            max-width: 400px;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .title {
+            color: darkgreen;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .info div {
+            flex: 1;
+            font-size: 14px;
+            position: relative;
+        }
+        .info div:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 60%;
+            width: 1px;
+            background-color: #ccc;
+        }
+        .label {
+            color: #555;
+        }
+        .value {
+            font-weight: bold;
+            color: #888;
+        }
+        /* @media (max-width: 480px) {
+            .info {
+                flex-direction: column;
+                align-items: start;
+                border: none;
+                padding-top: 0;
+            }
+            .info div:not(:last-child)::after {
+                display: none;
+            }
+            .info div {
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+            }
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="title">Wind River</div>
+        <div class="info">
+            <div>
+                <div class="label">SQFT</div>
+                <div class="value">1793</div>
+            </div>
+            <div>
+                <div class="label">Bedrooms</div>
+                <div class="value">2</div>
+            </div>
+            <div>
+                <div class="label">Style</div>
+                <div class="value">Modular homes</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
