@@ -55,6 +55,11 @@
 	&__container {
 		display: flex;
 	}
+	&__slider {
+		position: absolute;
+		right: 0;
+		// bottom: 0;
+	}
 	// .hero__play
 	&__play {
 		flex-grow: 1;

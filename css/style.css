@@ -1239,6 +1239,10 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.hero__slider {
+  position: absolute;
+  right: 0;
+}
 .hero__play {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
