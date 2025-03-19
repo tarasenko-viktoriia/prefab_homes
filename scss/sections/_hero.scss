@@ -171,16 +171,6 @@
         border-radius: toRem(6);
         background-color: var(--bg-color);
         padding: toRem(16) toRem(12);
-
-        button {
-            border-radius: 0.375rem;
-            background: var(--green-color);
-            padding: toRem(12) toRem(24);
-            color: var(--bg-color);
-            font-size: toRem(15);
-            font-weight: 500;
-            align-self: center;
-        }
     }
 
     // .selects-hero__item

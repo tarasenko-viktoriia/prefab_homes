@@ -80,3 +80,25 @@ function changeImage() {
 }
 
 setInterval(changeImage, 10000);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+	new Swiper(".swiper-container", {
+		direction: "vertical",
+		// loop: true,
+		slidesPerView: 3,
+		centeredSlides: true,
+
+		// Додаємо навігацію
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+
+		// Додаємо пагінацію
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
+});

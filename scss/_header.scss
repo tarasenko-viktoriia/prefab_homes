@@ -200,13 +200,7 @@
 			}
 		}
 		&--color {
-			transition: all 0.3s;
-			@media (any-hover: hover) {
-				&:hover {
-					background-color: var(--green-color);
-					color: var(--bg-color);
-				}
-			}
+			
 		}
 	// }
 	// @media (min-width: toEm(1630)) {

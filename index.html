@@ -43,70 +43,69 @@
     					<img id="heroImage2" src="img/banner.jpg" alt="House 2">
 					</div>
 					<div class="hero__container">
-						<h1 class="hero__title">Find your dream home</h1>
-						<div class="hero__selects selects-hero">
-							<form class="selects-hero__form" action="#" method="GET">
-								<div class="selects-hero__item">
-									<label for="square-feet">Square Feet</label>
-									<select name="square-feet" id="square-feet">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select>
+						<div class="hero__block">
+							<h1 class="hero__title">Find your dream home</h1>
+							<div class="hero__selects selects-hero">
+								<form class="selects-hero__form" action="#" method="GET">
+									<div class="selects-hero__item">
+										<label for="square-feet">Square Feet</label>
+										<select name="square-feet" id="square-feet">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+									</div>
+								
+									<div class="selects-hero__item">
+										<label for="bedrooms">Bedrooms</label>
+										<select name="bedrooms" id="bedrooms">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+									</div>
+								
+									<div class="selects-hero__item">
+										<label for="style">Style</label>
+										<select name="style" id="style">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+									</div>
+								
+									<button class="green-button" type="submit">Search</button>
+								</form>							
+							</div>
+						</div>
+						<div class="hero__slider">
+							<div class="swiper-pagination"></div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/slider/image-01.jpg" alt="House 1">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/slider/image-01.jpg" alt="House 2">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/slider/image-01.jpg" alt="House 3">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/slider/image-01.jpg" alt="House 4">
+									</div>
 								</div>
-							
-								<div class="selects-hero__item">
-									<label for="bedrooms">Bedrooms</label>
-									<select name="bedrooms" id="bedrooms">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select>
-								</div>
-							
-								<div class="selects-hero__item">
-									<label for="style">Style</label>
-									<select name="style" id="style">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-									</select>
-								</div>
-							
-								<button type="submit">Search</button>
-							</form>							
+
+							</div>
+
+							<!-- Кнопки перемикання під слайдером -->
+							<div class="navigation-buttons">
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
 						</div>
 					</div>
 					
-					<!-- <img src="img/home-section/image-4.png" alt="House 1">
-					<img src="img/home-section/image-4.png" alt="House 1"> -->
-					<!-- <div class="slider-container">
-						<div class="swiper main-slider">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 1"></div>
-								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 2"></div>
-								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 3"></div>
-								<div class="swiper-slide"><img src="img/home-section/image-4.png" alt="House 4"></div>
-							</div>
-						</div>
-						<div class="thumbnail-container">
-							<div class="swiper-pagination"></div>
-				
-							<div class="swiper thumbnail-slider">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide" onclick="window.location.href='page1.html'"><img src="img/home-section/image-4.png" alt="Thumb 1"></div>
-									<div class="swiper-slide" onclick="window.location.href='page2.html'"><img src="img/home-section/image-4.png" alt="Thumb 2"></div>
-									<div class="swiper-slide" onclick="window.location.href='page3.html'"><img src="img/home-section/image-4.png" alt="Thumb 3"></div>
-									<div class="swiper-slide" onclick="window.location.href='page4.html'"><img src="img/home-section/image-4.png" alt="Thumb 4"></div>
-								</div>
-							</div>
-						</div>
-						<div class="nav-buttons">
-							<div class="button-prev">&#8593;</div>
-							<div class="button-next">&#8595;</div>
-						</div>
-						
-					</div> -->
 				</section>
 				<section class="category">
 					<div class="category__container">
@@ -406,7 +405,7 @@
 										</select>
 									</div>
 								</div>
-								<button class="form__button" type="submit">Help me now</button>
+								<button class="form__button green-button" type="submit">Help me now</button>
 							</form>
 						</div>
 					</div>
@@ -419,7 +418,7 @@
 							<a  class="logo" href="#">
 								<img class="logo-img" src="img/logo-white.svg" alt="logo Fernir">
 							</a>
-							<a class="footer__btn" href="#">View homes</a>
+							<a class="footer__btn green-button" href="#">View homes</a>
 						</div>
 						<div class="footer__item">
 							<h4>Homes</h4>

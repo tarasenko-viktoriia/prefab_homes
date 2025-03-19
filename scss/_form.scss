@@ -80,16 +80,6 @@
             resize: none;
         }
     }
-    &__button {
-        border-radius: toRem(6);
-        background: var(--green-color);
-        padding: toRem(12) toRem(24);
-
-        color: var(--bg-color);
-        font-size: toRem(15);
-        font-weight: 500;
-        align-self: center;
-    }
 }
 .iti {
     display: flex;
