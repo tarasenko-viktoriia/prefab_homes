@@ -85,8 +85,7 @@ setInterval(changeImage, 10000);
 document.addEventListener("DOMContentLoaded", function () {
 	new Swiper(".swiper-container", {
 		direction: "vertical",
-		// loop: true,
-		slidesPerView: 3,
+		slidesPerView: 3.2,
 		centeredSlides: true,
 
 		// Додаємо навігацію
@@ -102,3 +101,4 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 	});
 });
+

@@ -31,19 +31,39 @@
 
 /* Кнопки під слайдером */
 .swiper-button-prev, .swiper-button-next {
-    color: white;
     position: relative;
-    top: 10px;
+    // top: 10px;
+    width: auto;
+    left: 0;
+
+    border-radius: 50%;
+    background-color: var(--btn-bg-color);
+    padding: toRem(10);
+}
+
+.swiper-button-prev:after {
+    content: "";
+    inline-size: toRem(24);
+    block-size: toRem(24);
+    transform: rotate(180deg);
+    background: url("../img/icons/arrow-black.svg") no-repeat center / contain;
+}
+.swiper-button-next:after {
+    content: "";
+    inline-size: toRem(24);
+    block-size: toRem(24);
+    background: url("../img/icons/arrow-black.svg") no-repeat center / contain;
 }
 
 .navigation-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    gap: toRem(12);
+    // margin-top: 10px;
 }
 
 .swiper-button-prev, .swiper-button-next {
-    margin: 0 10px;
+    // margin: 0 10px;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,

@@ -144,7 +144,8 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        padding-block-end: toRem(115);
+        padding-block-end: toRem(84);
+
 
     }
     &__title {
@@ -156,6 +157,10 @@
     &__selects {
         padding: toRem(10);
         max-width: toRem(912);
+    }
+
+    &__block {
+        margin-bottom: toRem(27);
     }
 }
 .selects-hero {

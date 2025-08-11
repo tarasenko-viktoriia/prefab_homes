@@ -33,4 +33,8 @@
             background: url("../../img/icons/arrow-green.svg") 0 0 / 100% no-repeat;
         }
     }
+
+    &--detail-page {
+        margin-bottom: toRem(100);
+    }
 }
