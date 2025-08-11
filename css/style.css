@@ -1024,6 +1024,11 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+.hero__slider {
+  position: relative;
+  height: calc(100vh - 100px); /* 100px — висота шапки+футера */
+  overflow: hidden;
+}
 
 .hero__img {
   position: absolute;
@@ -1123,10 +1128,10 @@ body {
 }
 
 .swiper-container {
-  width: 260px;
-  height: 735px;
-  overflow: hidden;
-  position: relative;
+  height: 100%;
+  padding-top: 80px; /* простір зверху */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .swiper-slide {
@@ -1142,6 +1147,7 @@ body {
   padding: 10px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.25);
+  max-width: 16.25rem;
 }
 .swiper-slide img {
   aspect-ratio: 240/200;

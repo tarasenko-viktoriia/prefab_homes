@@ -1,8 +1,8 @@
 .swiper-container {
-    width: 260px;
-    height: 735px;
-    overflow: hidden;
-    position: relative;
+  height: 100%;
+  padding-top: 80px;   /* простір зверху */
+//   padding-bottom: 60px;/* простір знизу */
+  box-sizing: border-box;
 }
 
 .swiper-slide {
@@ -12,6 +12,7 @@
     padding: 10px;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.25);
+    max-width: toRem(260);
 
     img {
         aspect-ratio: 240 / 200;

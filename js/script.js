@@ -83,22 +83,21 @@ setInterval(changeImage, 10000);
 
 
 document.addEventListener("DOMContentLoaded", function () {
-	new Swiper(".swiper-container", {
-		direction: "vertical",
-		slidesPerView: 3.2,
-		centeredSlides: true,
+  new Swiper(".swiper-container", {
+    direction: "vertical",
+    slidesPerView: 2.2,
+    centeredSlides: false, // вимикаємо центрування, щоб не було пустоти
+    watchOverflow: true,   // якщо слайдів мало, вимикає слайдер
+    spaceBetween: 16,      // відстань між слайдами (за бажанням)
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-		// Додаємо навігацію
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-
-		// Додаємо пагінацію
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
-	});
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 });
-
